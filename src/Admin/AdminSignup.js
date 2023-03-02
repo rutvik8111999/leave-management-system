@@ -21,7 +21,7 @@ function AdminSignup() {
             <motion.div className="relative mb-2">
               <motion.label
                 htmlFor="orginationName"
-                className="leading-7 text-sm text-gray-600"
+                className="leading-7 text-sm text-gray-600 font-bold"
               >
                 Orginization Name
               </motion.label>
@@ -36,7 +36,7 @@ function AdminSignup() {
             <motion.div className="relative mb-2">
               <motion.label
                 htmlFor="orginationEmail"
-                className="leading-7 text-sm text-gray-600"
+                className="leading-7 text-sm text-gray-600 font-bold"
               >
                 Orginization Email
               </motion.label>
@@ -51,7 +51,7 @@ function AdminSignup() {
             <motion.div className="relative mb-2">
               <motion.label
                 htmlFor="email"
-                className="leading-7 text-sm text-gray-600"
+                className="leading-7 text-sm text-gray-600 font-bold"
               >
                 Admin Email
               </motion.label>
@@ -65,7 +65,7 @@ function AdminSignup() {
             <motion.div className="relative mb-2">
               <motion.label
                 htmlFor="email"
-                className="leading-7 text-sm text-gray-600"
+                className="leading-7 text-sm text-gray-600 font-bold"
               >
                 Orginization Contact Number
               </motion.label>
@@ -79,21 +79,7 @@ function AdminSignup() {
             <motion.div className="flex flex-wrap -mx-3 mb-2">
               <motion.div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
                 <motion.label
-                  className="leading-7 text-sm text-gray-600"
-                  htmlFor="grid-city"
-                >
-                  City
-                </motion.label>
-                <motion.input
-                  className="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                  id="grid-city"
-                  type="text"
-                  placeholder="Albuquerque"
-                />
-              </motion.div>
-              <motion.div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-                <motion.label
-                  className="leading-7 text-sm text-gray-600"
+                  className="leading-7 text-sm text-gray-600 font-bold"
                   htmlFor="grid-zip"
                 >
                   Country
@@ -103,12 +89,12 @@ function AdminSignup() {
                   className="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   id="grid-zip"
                   type="text"
-                  placeholder="90210"
+                  placeholder="your country"
                 />
               </motion.div>
               <motion.div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
                 <motion.label
-                  className="leading-7 text-sm text-gray-600"
+                  className="leading-7 text-sm text-gray-600 font-bold"
                   htmlFor="grid-zip"
                 >
                   State
@@ -118,14 +104,28 @@ function AdminSignup() {
                   className="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   id="grid-zip"
                   type="text"
-                  placeholder="90210"
+                  placeholder="Your State"
+                />
+              </motion.div>
+              <motion.div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+                <motion.label
+                  className="leading-7 text-sm text-gray-600 font-bold"
+                  htmlFor="grid-city"
+                >
+                  City
+                </motion.label>
+                <motion.input
+                  className="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  id="grid-city"
+                  type="text"
+                  placeholder="Your City"
                 />
               </motion.div>
             </motion.div>
             <motion.div className="relative mb-4">
               <motion.label
                 htmlFor="password"
-                className="leading-7 text-sm text-gray-600"
+                className="leading-7 text-sm text-gray-600 font-bold"
               >
                 Password
               </motion.label>
@@ -139,7 +139,7 @@ function AdminSignup() {
 
             <motion.div className="relative mb-4">
               <motion.label
-                className="leading-7 text-sm text-gray-600"
+                className="leading-7 text-sm text-gray-600 font-bold"
                 htmlFor="file_input"
               >
                 Upload Logo
@@ -151,12 +151,12 @@ function AdminSignup() {
               />
             </motion.div>
             <motion.button
-              whileHover={{ scale: 1.1 }}
+              whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.9 }}
               transition={{ duration: 0.2 }}
               className="text-white bg-blue-500 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg"
             >
-              Button
+              Submit
             </motion.button>
           </motion.div>
         </div>
